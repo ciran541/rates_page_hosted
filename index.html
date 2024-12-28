@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Rates Table</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="section-divider">
+        <div class="section-header">Completed Residential Properties</div>
+        <div class="section-subheader">Minimum loan size applies</div>
+        <div class="date-header" id="updateDate"></div>
+    </div>
+    <div class="toggle-buttons">
+        <button class="toggle-btn active" data-table="fixed">FIXED</button>
+        <button class="toggle-btn" data-table="floating">FLOATING</button>
+    </div>
+    <div class="container">
+        <div class="table-container">
+            <table id="fixed-table">
+                <thead>
+                    <tr>
+                        <th>BANK</th>
+                        <th>Lock-in / Free Conversion(Years)</th>
+                        <th>YEAR&nbsp;1</th>
+                        <th>YEAR&nbsp;2</th>
+                        <th>YEAR&nbsp;3</th>
+                        <th>YEAR&nbsp;4</th>
+                        <th>YEAR&nbsp;5</th>
+                        <th>YEAR&nbsp;6</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Fixed rates data -->
+                </tbody>
+            </table>
+
+            <table id="floating-table" style="display: none;">
+                <thead>
+                    <tr>
+                        <th>BANK</th>
+                        <th>Lock-in / Free Conversion(Years)</th>
+                        <th>YEAR 1</th>
+                        <th>YEAR 2</th>
+                        <th>YEAR 3</th>
+                        <th>YEAR 4</th>
+                        <th>YEAR 5</th>
+                        <th>YEAR 6</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Floating rates data -->
+                </tbody>
+            </table>
+        </div>
+        <div class="button-container">
+            <a href="https://theloanconnection.com.sg/loan-application-form/" class="get-rewards" id="contactBtn" target="_blank">Enquire Now</a>
+        </div>
+    </div>
+
+    <!-- Uncompleted Residential Properties Section -->
+    <div class="section-divider">
+        <div class="section-header">Uncompleted Residential Properties</div>
+        <div class="section-subheader">Minimum loan size applies</div>
+        <div class="date-header" id="updateDate"></div>
+    </div>
+    <div class="container">
+        <div class="table-container">
+            <table id="uncompleted-table">
+                <thead>
+                    <tr>
+                        <th>BANK</th>
+                        <th>Lock-in</th>
+                        <th>YEAR 1</th>
+                        <th>YEAR 2</th>
+                        <th>YEAR 3</th>
+                        <th>YEAR 4</th>
+                        <th>YEAR 5</th>
+                        <th>YEAR 6</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Table body will be populated via JavaScript -->
+                </tbody>
+            </table>
+        </div>
+        <div class="button-container">
+            <a href="https://theloanconnection.com.sg/loan-application-form/" class="get-rewards" id="contactBtnUncompleted" target="_blank">Enquire Now</a>
+        </div>
+    </div>
+    <!-- SORA Rates Section -->
+<div class="section-divider">
+    <div class="section-header">Singapore Overnight Rate Average (SORA)</div>
+    <div class="date-header" id="soraUpdateDate"></div>
+</div>
+<div class="container sora-container">
+    <div class="table-container">
+        <table id="sora-table">
+            <thead>
+                <tr>
+                    <th>RATE TYPE</th>
+                    <th>1-MONTH</th>
+                    <th>3-MONTH</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Compounded SORA</td>
+                    <td>3.0112</td>
+                    <td>3.1047</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="note-text">SORA rates were retrieved from <a href="https://eservices.mas.gov.sg/Statistics/dir/DomesticInterestRates.aspx" style="font-size: 16px; color: #4175fc;" target="_blank">MAS website</a>.</div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
